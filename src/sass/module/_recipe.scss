@@ -1,0 +1,110 @@
+@use "global" as *;
+.recipe {
+    display: flex;
+    flex-direction: column;
+    gap: rem(244);
+}
+.recipe__container {
+    display: flex;
+    flex-direction: column;
+    gap: rem(87);
+}
+.recipe__inner {
+    display: flex;
+    position: relative;
+}
+.recipe__sub {
+    display: flex;
+}
+.recipe__title {
+    font-size: rem(30);
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: rem(21);
+}
+.recipe__title::before {
+    content: "";
+    display: block;
+    width: rem(20);
+    height: rem(4);
+    background-color: $accent;
+}
+.recipe__subtitle {
+    font-size: rem(24);
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    margin-top: rem(25);
+}
+.recipe__text {
+    line-height: 1.5625;
+    margin-top: rem(28);
+}
+.recipe__image {
+    position: absolute;
+    left: rem(623);
+    overflow: hidden;
+    width: 100%;
+    max-width: rem(936);
+}
+.recipe__image img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 936 / 480;
+    object-fit: cover;
+}
+.recipe__point {
+    width: rem(94);
+    height: rem(26);
+    display: flex;
+    align-items: center;
+    margin-top: rem(48);
+}
+.recipe__example {
+    display: flex;
+    align-items: center;
+    gap: rem(28);
+}
+.recipe__subimage {
+    border: rem(6) solid #fff;
+    margin-right: rem(60);
+    overflow: hidden;
+    width: 100%;
+    max-width: rem(409);
+}
+.recipe__subimage img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 409 / 373;
+    object-fit: cover;
+}
+.recipe__tag {
+    width: rem(120);
+    height: rem(30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent;
+    border-radius: rem(30);
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+.recipe__menu-text {
+    margin-top: rem(33);
+}
+.recipe__container:nth-of-type(2n) .recipe__inner {
+    justify-content: flex-end;
+}
+.recipe__container:nth-of-type(2n) .recipe__image {
+    left: auto;
+    right: rem(623);
+}
+.recipe__container:nth-of-type(2n) .recipe__menu {
+    margin-left: rem(71);
+}
+
+.recipe__container:nth-of-type(2n) .recipe__subimage {
+    order: 2;
+    margin-right: 0;
+}

@@ -1,0 +1,18 @@
+@use "global" as *;
+.feature {
+    background-color: #ecebe6;
+    padding-top: rem(124);
+    padding-bottom: rem(80);
+}
+.feature__title {
+    width: rem(726);
+    margin: auto;
+}
+.feature__cards {
+    margin-top: rem(49);
+}
+.feature__text {
+    margin-top: rem(48);
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+}

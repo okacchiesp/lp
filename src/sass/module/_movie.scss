@@ -1,0 +1,30 @@
+@use "global" as *;
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(52);
+    padding-top: rem(73);
+    padding-bottom: rem(80);
+    position: relative;
+}
+.movie__title {
+    width: rem(474);
+}
+.movie__video {
+    width: rem(910);
+    height: rem(520);
+}
+.movie__video iframe {
+    width: 100%;
+    height: 100%;
+}
+.movie::after {
+    content: "";
+    height: rem(290);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    bottom: rem(153);
+    background-color: $main;
+}

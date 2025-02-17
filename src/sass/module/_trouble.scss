@@ -1,0 +1,22 @@
+@use "global" as *;
+.trouble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(33);
+    height: rem(770);
+    position: relative;
+}
+.trouble img:first-child {
+    width: rem(543);
+}
+.trouble img:nth-of-type(2) {
+    width: rem(865);
+}
+.trouble img:last-child {
+    width: rem(450);
+    position: absolute;
+    bottom: rem(-74);
+    left: 50%;
+    transform: translateX(-50%);
+}

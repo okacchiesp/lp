@@ -1,0 +1,13 @@
+@use "global" as *;
+.button {
+    width: rem(350);
+    height: rem(80);
+    background-color: $accent;
+    color: #fff;
+    border-radius: rem(40);
+    font-size: rem(28);
+    letter-spacing: 0.06em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
