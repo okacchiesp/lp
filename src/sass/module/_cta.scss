@@ -1,0 +1,45 @@
+@use "global" as *;
+.cta__action{
+    background-color: #efc94f;
+    font-size: rem(24);
+    font-weight: bold;
+    height: rem(70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(70);
+}
+.cta__image {
+    width: rem(550);
+}
+.cta__contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cta__text{
+    width: rem(535);
+}
+.cta__note{
+    color: #ff0000;
+    font-size: rem(18);
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-top: rem(56);
+    font-weight: 500;
+}
+.cta__password{
+    font-size: rem(30);
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    margin-top: rem(27);
+}
+.cta__btn{
+    margin-top: rem(40);
+}
