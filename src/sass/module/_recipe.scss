@@ -1,19 +1,23 @@
 @use "global" as *;
-recipe{
-}
 .recipe__wrapper {
     display: flex;
     flex-direction: column;
     gap: rem(244);
     align-items: center;
-    margin: rem(130) auto 0;
+    margin: rem(240) auto 0;
     position: relative;
     max-width: rem(1920);
     width: 100%;
+    @include mq(md) {
+        margin-top: rem(80);
+    }
 }
-.recipe__main{
+.recipe__main {
     width: rem(652);
     margin: auto;
+    @include mq(md) {
+        width: 90%;
+    }
 }
 .recipe__container {
     display: flex;
@@ -32,7 +36,7 @@ recipe{
     top: rem(-80);
     overflow: hidden;
 }
-.recipe__background img{
+.recipe__background img {
     aspect-ratio: 1560 / 1100;
     object-fit: cover;
     width: 100%;
@@ -40,6 +44,9 @@ recipe{
 }
 .recipe__inner {
     display: flex;
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
 .recipe__sub {
     display: flex;
@@ -51,6 +58,7 @@ recipe{
     display: flex;
     align-items: center;
     gap: rem(21);
+    line-height: 1;
 }
 .recipe__title::before {
     content: "";
@@ -63,10 +71,11 @@ recipe{
     font-size: rem(24);
     font-weight: bold;
     letter-spacing: 0.06em;
-    margin-top: rem(25);
+    margin-top: rem(24);
+    line-height: 1;
 }
 .recipe__text {
-    line-height: 1.5625;
+    line-height: 1.5;
     margin-top: rem(28);
 }
 .recipe__image {
@@ -86,15 +95,18 @@ recipe{
     height: rem(26);
     display: flex;
     align-items: center;
-    margin-top: rem(48);
+    margin-top: rem(50);
 }
 .recipe__example {
     display: flex;
     align-items: center;
     gap: rem(28);
+    @include mq(md) {
+        align-items: flex-start;
+        margin-top: rem(16);
+    }
 }
 .recipe__subimage {
-    border: rem(6) solid #fff;
     margin-right: rem(60);
     overflow: hidden;
     width: 100%;
@@ -120,18 +132,26 @@ recipe{
 .recipe__menu-text {
     margin-top: rem(33);
 }
-.recipe__container:nth-of-type(2n) .recipe__inner {
-    // justify-content: flex-end;
-}
-.recipe__container:nth-of-type(2n) .recipe__image {
+.recipe__wrapper:nth-of-type(2n) .recipe__background {
     left: auto;
-    right: rem(623);
+    right: 0;
 }
-.recipe__container:nth-of-type(2n) .recipe__menu {
-    margin-left: rem(71);
+.recipe__wrapper:nth-of-type(2n) .recipe__inner {
+    justify-content: flex-end;
 }
-
-.recipe__container:nth-of-type(2n) .recipe__subimage {
+.recipe__wrapper:nth-of-type(2n) .recipe__image {
+    left: auto;
+    right: 50%;
+}
+.recipe__wrapper:nth-of-type(2n) .recipe__menu {
+    order: 1;
+    @include mq(md) {
+        order: 2;
+    }
+}
+.recipe__wrapper:nth-of-type(2n) .recipe__subimage {
     order: 2;
-    margin-right: 0;
+    @include mq(md) {
+        order: 1;
+    }
 }

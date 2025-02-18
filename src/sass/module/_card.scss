@@ -1,12 +1,15 @@
 @use "global" as *;
 .card {
-    width: calc((rem(1200) - rem(30)) / 3);
+    width: rem(390);
     padding: rem(20);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: rem(30);
     background-color: #fff;
+    @include mq(md) {
+        width: 100%;
+    }
 }
 .card__image {
     overflow: hidden;
@@ -25,4 +28,5 @@
 .card__text {
     font-size: rem(16);
     line-height: calc(rem(28) / rem(16));
+    letter-spacing: 0.04em;
 }

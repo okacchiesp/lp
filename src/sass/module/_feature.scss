@@ -7,6 +7,9 @@
 .feature__title {
     width: rem(726);
     margin: auto;
+    @include mq(md) {
+        width: 90%;
+    }
 }
 .feature__cards {
     margin-top: rem(49);

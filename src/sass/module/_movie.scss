@@ -10,10 +10,17 @@
 }
 .movie__title {
     width: rem(474);
+    @include mq(md) {
+        width: 90%;
+    }
 }
 .movie__video {
     width: rem(910);
     height: rem(520);
+    @include mq(md) {
+        width: 90%;
+        height: calc((90vw * 9) / 16);
+    }
 }
 .movie__video iframe {
     width: 100%;
@@ -27,4 +34,8 @@
     position: absolute;
     bottom: rem(153);
     background-color: $main;
+    @include mq(md) {
+        height: rem(80);
+        bottom: rem(120);
+    }
 }

@@ -2,36 +2,45 @@
 .domon__title {
     width: rem(492);
 }
-.domon__inner{
+.domon__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
-.domon__image{
+.domon__image {
     width: rem(351);
 }
-.domon__contents{
+.domon__contents {
     display: flex;
     align-items: center;
     gap: rem(48);
     margin-top: rem(50);
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
-.domon__content{    
+.domon__content {
     display: flex;
     flex-direction: column;
     gap: rem(48);
 }
-.domon__subtitle{
+.domon__subtitle {
     font-size: rem(24);
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.06em;
 }
-.domon__text{
+.domon__text {
     line-height: 1.75;
     letter-spacing: 0.03em;
 }
-.domon__name{
+.domon__name {
     align-self: flex-end;
     margin-top: rem(50);
+    @include mq(md) {
+        align-self: flex-start;
+    }
 }

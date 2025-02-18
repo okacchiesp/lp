@@ -4,4 +4,7 @@
     display: flex;
     justify-content: center;
     gap: rem(15);
+    @include mq(md) {
+        flex-direction: column;
+    }
 }

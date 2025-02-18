@@ -14,28 +14,34 @@
     height: rem(4);
     background-color: $accent;
 }
-.spec table{
+.spec table {
     width: 100%;
     margin-top: rem(40);
 }
-.spec tr{
+.spec tr {
     display: flex;
     border-top: 1px solid #505050;
     border-left: 1px solid #505050;
     border-right: 1px solid #505050;
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
-.spec tr:last-child{
+.spec tr:last-child {
     border-bottom: 1px solid #505050;
 }
-.spec td{
+.spec td {
     display: flex;
     align-items: center;
     height: rem(45);
     padding-left: rem(28);
 }
-.spec tr td:first-child{
+.spec tr td:first-child {
     width: rem(440);
     border-right: 1px solid #505050;
     background-color: $main;
-
+    @include mq(md) {
+        width: 100%;
+        border-right: none;
+    }
 }

@@ -1,5 +1,5 @@
 @use "global" as *;
-.cta__action{
+.cta__action {
     background-color: #efc94f;
     font-size: rem(24);
     font-weight: bold;
@@ -8,25 +8,28 @@
     justify-content: center;
     align-items: center;
 }
-.cta__inner{
+.cta__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: rem(70);
     gap: rem(100);
+    @include mq(md) {
+        flex-direction: column;
+    }
 }
 .cta__image {
     width: rem(550);
 }
-.cta__contents{
+.cta__contents {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.cta__text{
+.cta__text {
     width: rem(535);
 }
-.cta__note{
+.cta__note {
     color: #ff0000;
     font-size: rem(18);
     line-height: 1.5;
@@ -34,13 +37,16 @@
     text-align: center;
     margin-top: rem(56);
     font-weight: 500;
+    @include mq(md) {
+        text-align: left;
+    }
 }
-.cta__password{
+.cta__password {
     font-size: rem(30);
     letter-spacing: 0.06em;
     font-weight: bold;
     margin-top: rem(27);
 }
-.cta__btn{
+.cta__btn {
     margin-top: rem(40);
 }
