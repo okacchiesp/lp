@@ -1,0 +1,40 @@
+@use "global" as *;
+.spec__title {
+    font-size: rem(30);
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: rem(21);
+}
+.spec__title::before {
+    content: "";
+    display: block;
+    width: rem(20);
+    height: rem(4);
+    background-color: $accent;
+}
+.spec table{
+    width: 100%;
+}
+.spec tr{
+    display: flex;
+    border-top: 1px solid #505050;
+    border-left: 1px solid #505050;
+    border-right: 1px solid #505050;
+}
+.spec tr:last-child{
+    border-bottom: 1px solid #505050;
+}
+.spec td{
+    display: flex;
+    align-items: center;
+    height: rem(45);
+    padding-left: rem(28);
+}
+.spec tr td:first-child{
+    width: rem(440);
+    border-right: 1px solid #505050;
+    background-color: $main;
+
+}

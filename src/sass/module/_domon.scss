@@ -1,0 +1,37 @@
+@use "global" as *;
+.domon__title {
+    width: rem(492);
+}
+.domon__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.domon__image{
+    width: rem(351);
+}
+.domon__contents{
+    display: flex;
+    align-items: center;
+    gap: rem(48);
+    margin-top: rem(50);
+}
+.domon__content{    
+    display: flex;
+    flex-direction: column;
+    gap: rem(48);
+}
+.domon__subtitle{
+    font-size: rem(24);
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+}
+.domon__text{
+    line-height: 1.75;
+    letter-spacing: 0.03em;
+}
+.domon__name{
+    align-self: flex-end;
+    margin-top: rem(50);
+}
