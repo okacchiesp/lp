@@ -1,47 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="robots" content="noindex" />
-        <!-- meta情報 -->
-        <title>CodeUps</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <!-- ogp -->
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:description" content="" />
-        <!-- ファビコン -->
-        <link rel="”icon”" href="" />
-        <!-- css -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <!-- JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script defer src="./assets/js/script.js"></script>
-    </head>
-    <body>
-        <header class="header">
-            <a href="" class="header__logo">
-                <img src="assets/images/logo.png" alt="">
-            </a>
-        </header>
-        <main>
+<?php
+/*
+*template name:ドライフードエアートースター_①酵素訴求
+*/
+get_header('lp_dryfoodairtoaster');
+?>
+<body>
+          <main>
             <div class="mv">
                 <div class="mv__image">
                     <img src="assets/images/mv.jpg" alt="" class="u-desktop" />
                     <img
-                        src="assets/images/mv-sp.jpg"
+                        src="assets/images/mv-sp.png"
                         alt=""
                         class="u-mobile"
                     />
@@ -634,21 +603,9 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <a href="#">
-              <div class="scrollup">
-                <div class="scrollup_inner">
-                </div>
-              </div>
-            </a>
-            <div class="content-inner">
-              <ul>
-                <li class="footer-li-first"><a href="https://www.e-homare.jp/transaction/">特定商取引法に基づく表示</a></li>
-                <li><a href="https://www.e-homare.jp/privacypolicy/">個人情報保護の取組みについて</a></li>
-              </ul>
-              <p>Copyrights.Homare Online Shop</p>
-            </div>
-          </footer>
-      
-    </body>
+
+</body>
+
 </html>
+<?php
+get_footer('lp');

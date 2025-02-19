@@ -1,0 +1,45 @@
+@use "global" as *;
+.footer {
+    display: block;
+    width: 100%;
+    padding: 60px 0;
+    color: #ffffff;
+    background-color: #111111;
+    position: relative;
+    margin-top: rem(150);
+}
+.footer a {
+    color: #ffffff;
+    transition: 0.5s;
+}
+.footer a:hover{
+    color: #999;
+}
+.footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.footer-li-first {
+    border-right: solid 1px #555;
+}
+.footer li {
+    width: 33%;
+    margin: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+.footer p {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 60px;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+.content-inner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}

@@ -1,0 +1,23 @@
+@use "global" as *;
+.header {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 1000;
+    padding: rem(30);
+    height: rem(160);
+}
+.header__logo{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-width: rem(200);
+    @include mq(md) {
+        max-width: rem(120);
+    }
+}
+.header__logo img{
+    aspect-ratio: 200 / 57;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
