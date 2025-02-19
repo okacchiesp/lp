@@ -1,54 +1,54 @@
 <?php
 /*
-*template name:ドライフードエアートースター_①酵素訴求
+*template name:ドライフードエアートースター_②ペット訴求
 */
-get_header('lp_dryfoodairtoaster');
+get_header('lp_dryfoodairtoaster-pets');
 ?>
 
 <body>
     <header class="header">
         <a href="" class="header__logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/logo.png" alt="homare">
+            <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/logo.png" alt="homare">
         </a>
     </header>
     <main>
         <div class="mv">
             <div class="mv__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/mv.jpg" alt="ドライフード・エアートースター" class="u-desktop" />
+                <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/mv.jpg" alt="ドライフード・エアートースター" class="u-desktop" />
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/mv-sp.jpg"
+                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/mv-sp.jpg"
                     alt="ドライフード・エアートースター"
                     class="u-mobile" />
             </div>
             <div class="mv__btn">
                 <a href="#cta"><img
-                        src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/mv-btn.png"
+                        src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/mv-btn.png"
                         alt="ご購入はこちら" /></a>
             </div>
         </div>
         <div class="trouble">
-            <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/comment.png" alt="こんなお悩みありませんか？" />
+            <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/comment.png" alt="こんなお悩みありませんか？" />
             <img
-                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/question.png"
+                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/question.png"
                 alt="エプロンを着けた女性が、キッチンで考え込むような表情をしている"
                 class="u-desktop" />
             <img
-                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/question-sp.png"
+                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/question-sp.png"
                 alt="エプロンを着けた女性が、キッチンで考え込むような表情をしている"
                 class="u-mobile" />
 
-            <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/tri.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/tri.png" alt="" />
         </div>
         <div class="feature">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/feature-title.png"
+                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/feature-title.png"
                 alt="そのお悩み、ドライフード・エアートースターで解決できます"
                 class="feature__title" />
             <div class="feature__cards cards inner fade-in">
                 <div class="cards-item card">
                     <div class="card__image">
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/rawfood.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/image01.jpg"
                             alt="透明なガラス皿に盛り付けられた色とりどりのドライフルーツ。オレンジやキウイ、バナナ、レモン、イチジクなどが並び、周囲には緑の葉が装飾として添えられている。爽やかでヘルシーな印象のある食品イメージ。" />
                     </div>
                     <h2 class="card__title">
@@ -65,7 +65,7 @@ get_header('lp_dryfoodairtoaster');
                 <div class="cards-item card">
                     <div class="card__image">
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/dryfood-airtoaster01.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/image02.jpg"
                             alt="ドライフード・エアートースターがキッチンカウンターの上に置かれている。デジタル表示付きの操作パネルが右側にあり、温度や時間を設定できる。背景にはシンクや調理器具が並び、家庭用キッチンの雰囲気が伝わる。" />
                     </div>
                     <h2 class="card__title">
@@ -84,7 +84,7 @@ get_header('lp_dryfoodairtoaster');
                 <div class="cards-item card">
                     <div class="card__image">
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/dryfood-airtoaster02.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/image03.jpg"
                             alt="白いキッチンラックの棚に設置されたドライフード・エアートースター。隣には炊飯器が置かれ、上段には電子レンジが収納されている。シンプルで機能的なキッチン収納スペースの様子が伝わる。" />
                     </div>
                     <h2 class="card__title">
@@ -105,7 +105,7 @@ get_header('lp_dryfoodairtoaster');
         </div>
         <div class="movie">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/movie-title.png"
+                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/movie-title.png"
                 alt="動画で詳しくご紹介"
                 class="movie__title" />
             <div class="movie__video fade-in">
@@ -117,7 +117,7 @@ get_header('lp_dryfoodairtoaster');
         </div>
         <div class="rawfood">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/rawfood-title.png"
+                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/rawfood-title.png"
                 alt="そもそもローフードとは？"
                 class="rawfood__title" />
             <div class="rawfood__content inner fade-in">
@@ -135,7 +135,7 @@ get_header('lp_dryfoodairtoaster');
                     </p>
                 </div>
                 <div class="rawfood__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/rawfood01.jpg" alt="木のテーブルに置かれたカラフルなヘルシープレート。スライスした鶏胸肉、アボカド、チェリートマト、コーン、アーモンド、グリーンリーフがバランスよく盛り付けられ、中央にはライムが添えられている。隣にはカリッと焼かれたバゲットの入った木の器が置かれ、フォークとスプーンが並べられている。" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/rawfood01.jpg" alt="木のテーブルに置かれたカラフルなヘルシープレート。スライスした鶏胸肉、アボカド、チェリートマト、コーン、アーモンド、グリーンリーフがバランスよく盛り付けられ、中央にはライムが添えられている。隣にはカリッと焼かれたバゲットの入った木の器が置かれ、フォークとスプーンが並べられている。" />
                 </div>
             </div>
             <div class="rawfood__content inner">
@@ -147,26 +147,26 @@ get_header('lp_dryfoodairtoaster');
                     </p>
                 </div>
                 <div class="rawfood__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/rawfood02.jpg" alt="食卓で和食を楽しむ女性の手元。木製のお椀を持ち、赤い箸で食事をしている。テーブルにはご飯やおかず、ほうじ茶の入ったグラスが並び、落ち着いた家庭の食事風景が広がる。" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/rawfood02.jpg" alt="食卓で和食を楽しむ女性の手元。木製のお椀を持ち、赤い箸で食事をしている。テーブルにはご飯やおかず、ほうじ茶の入ったグラスが並び、落ち着いた家庭の食事風景が広がる。" />
                 </div>
             </div>
         </div>
         <div class="recipe recipe-margin">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-title.png"
+                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-title.png"
                 alt="機能別ドライフード・エアートースターで調理ができるレシピ"
                 class="recipe__main u-desktop" />
             <img
-                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-title-sp.png"
+                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-title-sp.png"
                 alt="機能別ドライフード・エアートースターで調理ができるレシピ"
                 class="recipe__main u-mobile" />
 
             <div class="recipe__wrapper fade-in">
                 <div class="recipe__background u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-background.png" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-background.png" alt="" />
                 </div>
                 <div class="recipe__image u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe01.png" alt="木のプレートに盛り付けられたドライフルーツとナッツの盛り合わせ。イチジク、マンゴー、クランベリー、バナナチップス、クルミ、アーモンド、カシューナッツなどが彩りよく並ぶ。左下には温度設定（30℃〜68℃）と設定時間（1分〜28時間）を示すテキストが記載されている。" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe01.png" alt="木のプレートに盛り付けられたドライフルーツとナッツの盛り合わせ。イチジク、マンゴー、クランベリー、バナナチップス、クルミ、アーモンド、カシューナッツなどが彩りよく並ぶ。左下には温度設定（30℃〜68℃）と設定時間（1分〜28時間）を示すテキストが記載されている。" />
                 </div>
                 <div class="recipe__container">
                     <div class="recipe__inner inner">
@@ -174,7 +174,7 @@ get_header('lp_dryfoodairtoaster');
                             <h2 class="recipe__title">乾燥モード</h2>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point01.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point01.png"
                                     alt="ポイント1" />
                             </div>
                             <h3 class="recipe__subtitle">
@@ -187,7 +187,7 @@ get_header('lp_dryfoodairtoaster');
                             </p>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point02.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point02.png"
                                     alt="ポイント2" />
                             </div>
                             <h3 class="recipe__subtitle">クイックモード</h3>
@@ -202,7 +202,7 @@ get_header('lp_dryfoodairtoaster');
                     <div class="recipe__inner inner">
                         <div class="recipe__subimage">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-sub01.png"
+                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-sub01.png"
                                 alt="白い皿に盛り付けられた自家製ドライトマト。赤みがかった色合いとシワの寄った表面が特徴的。左上には黄色のリボン型ラベルに『recipe 1』と書かれており、レシピの紹介画像であることが示されている。"
                                 class="block-sub-image" />
                         </div>
@@ -229,10 +229,10 @@ get_header('lp_dryfoodairtoaster');
             </div>
             <div class="recipe__wrapper fade-in">
                 <div class="recipe__background u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-background.png" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-background.png" alt="" />
                 </div>
                 <div class="recipe__image u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe02.png" alt="クラシックな縁取りのある白いプレートに盛り付けられた洋風朝食セット。バターがのったトースト、目玉焼き、ソーセージ、ベーコン、サラダが彩りよく並ぶ。背景にはストライプ柄のクロスが敷かれ、横にはオレンジジュースのグラスが置かれている。右下には温度設定（230℃）と設定時間（30秒〜10分）を示すテキストが記載されている。" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe02.png" alt="クラシックな縁取りのある白いプレートに盛り付けられた洋風朝食セット。バターがのったトースト、目玉焼き、ソーセージ、ベーコン、サラダが彩りよく並ぶ。背景にはストライプ柄のクロスが敷かれ、横にはオレンジジュースのグラスが置かれている。右下には温度設定（230℃）と設定時間（30秒〜10分）を示すテキストが記載されている。" />
                 </div>
                 <div class="recipe__container">
                     <div class="recipe__inner inner">
@@ -240,7 +240,7 @@ get_header('lp_dryfoodairtoaster');
                             <h2 class="recipe__title">乾燥モード</h2>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point01.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point01.png"
                                     alt="ポイント1" />
                             </div>
                             <h3 class="recipe__subtitle">
@@ -253,7 +253,7 @@ get_header('lp_dryfoodairtoaster');
                             </p>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point02.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point02.png"
                                     alt="ポイント2" />
                             </div>
                             <h3 class="recipe__subtitle">クイックモード</h3>
@@ -268,7 +268,7 @@ get_header('lp_dryfoodairtoaster');
                     <div class="recipe__inner inner">
                         <div class="recipe__subimage">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-sub02.png"
+                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-sub02.png"
                                 alt="" />
                         </div>
                         <div class="recipe__menu">
@@ -294,10 +294,10 @@ get_header('lp_dryfoodairtoaster');
             </div>
             <div class="recipe__wrapper fade-in">
                 <div class="recipe__background u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-background.png" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-background.png" alt="" />
                 </div>
                 <div class="recipe__image u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe03.png" alt="こんがり焼き色がついたチーズがとろけるグラタン。オーブン皿にはほうれん草や牡蠣、マカロニが入ったクリーミーなソースがたっぷり。木製のテーブルの上にはフォークと布ナプキンが添えられ、奥にはバゲットが置かれている。左下には温度設定（100℃〜230℃）と設定時間（1分〜1時間30分）を示すテキストが記載されている。" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe03.png" alt="こんがり焼き色がついたチーズがとろけるグラタン。オーブン皿にはほうれん草や牡蠣、マカロニが入ったクリーミーなソースがたっぷり。木製のテーブルの上にはフォークと布ナプキンが添えられ、奥にはバゲットが置かれている。左下には温度設定（100℃〜230℃）と設定時間（1分〜1時間30分）を示すテキストが記載されている。" />
                 </div>
                 <div class="recipe__container">
                     <div class="recipe__inner inner">
@@ -305,7 +305,7 @@ get_header('lp_dryfoodairtoaster');
                             <h2 class="recipe__title">乾燥モード</h2>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point01.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point01.png"
                                     alt="ポイント1" />
                             </div>
                             <h3 class="recipe__subtitle">
@@ -318,7 +318,7 @@ get_header('lp_dryfoodairtoaster');
                             </p>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point02.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point02.png"
                                     alt="ポイント2" />
                             </div>
                             <h3 class="recipe__subtitle">クイックモード</h3>
@@ -333,7 +333,7 @@ get_header('lp_dryfoodairtoaster');
                     <div class="recipe__inner inner">
                         <div class="recipe__subimage">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-sub03.png"
+                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-sub03.png"
                                 alt=""
                                 class="block-sub-image" />
                         </div>
@@ -360,10 +360,10 @@ get_header('lp_dryfoodairtoaster');
             </div>
             <div class="recipe__wrapper fade-in">
                 <div class="recipe__background u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-background.png" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-background.png" alt="" />
                 </div>
                 <div class="recipe__image u-desktop">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe04.png" alt="ガラスのカップに注がれた温かいハーブティー。カップの縁には細かい湯気が立ち上り、奥にはハーブの入ったガラス製のティーポットが置かれている。木製のトレーの上にカップとソーサーが並べられ、落ち着いた雰囲気が漂う。右下には温度設定（なし）と設定時間（1分〜28時間）を示すテキストが記載されている。" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe04.png" alt="ガラスのカップに注がれた温かいハーブティー。カップの縁には細かい湯気が立ち上り、奥にはハーブの入ったガラス製のティーポットが置かれている。木製のトレーの上にカップとソーサーが並べられ、落ち着いた雰囲気が漂う。右下には温度設定（なし）と設定時間（1分〜28時間）を示すテキストが記載されている。" />
                 </div>
                 <div class="recipe__container">
                     <div class="recipe__inner inner">
@@ -371,7 +371,7 @@ get_header('lp_dryfoodairtoaster');
                             <h2 class="recipe__title">乾燥モード</h2>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point01.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point01.png"
                                     alt="ポイント1" />
                             </div>
                             <h3 class="recipe__subtitle">
@@ -384,7 +384,7 @@ get_header('lp_dryfoodairtoaster');
                             </p>
                             <div class="recipe__point">
                                 <img
-                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/point02.png"
+                                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/point02.png"
                                     alt="ポイント2" />
                             </div>
                             <h3 class="recipe__subtitle">クイックモード</h3>
@@ -399,7 +399,7 @@ get_header('lp_dryfoodairtoaster');
                     <div class="recipe__inner inner">
                         <div class="recipe__subimage">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/recipe-sub04.png"
+                                src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/recipe-sub04.png"
                                 alt="" />
                         </div>
                         <div class="recipe__menu">
@@ -427,12 +427,12 @@ get_header('lp_dryfoodairtoaster');
         <div class="domon domon-margin">
             <div class="domon__inner inner">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/domon-title.png"
+                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/domon-title.png"
                     alt="ローフード協会の土門ひろゆきさん共同開発"
                     class="domon__title" />
                 <div class="domon__contents fade-in">
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/domon.png"
+                        src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/domon.png"
                         alt="土門ひろゆきさん"
                         class="domon__image" />
                     <div class="domon__content">
@@ -501,33 +501,33 @@ get_header('lp_dryfoodairtoaster');
                 <div class="accessory__content fade-in">
                     <div class="accessory__list">
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/accessory01.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/accessory01.jpg"
                             alt="トレーのイラスト。表面には4本のスリット状の溝があり、調理時の熱や蒸気の循環を考慮したデザイン。下には『トレー×1枚（※1）』と記載されている。"
                             class="accessory__image" />
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/accessory05.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/accessory05.jpg"
                             alt="パンくずトレーのイラスト。中央に長方形のくぼみがあり、パンくずや食品のカスを受け止める設計。片側にスライド用の切り欠きがある。下には『パンくずトレー×1枚』と記載されている。"
                             class="accessory__image" />
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/accessory02.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/accessory02.jpg"
                             alt="トースター用のオーブントレーのイラスト。細かい金属の格子状のデザインで、食材を均等に加熱できる構造になっている。下には『トースター オーブントレー×1枚』と記載されている。"
                             class="accessory__image" />
                     </div>
                     <div class="accessory__list">
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/accessory03.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/accessory03.jpg"
                             alt="テフロン加工のノンスティックシートのイラスト。四角い形状で表面は滑らか。調理時に食材がくっつきにくく、オーブンやトースターでの使用に適している。下には『テフロンシート（ノンスティックシート）×1枚』と記載されている。"
                             class="accessory__image" />
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/accessory04.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/accessory04.jpg"
                             alt="乾燥モード専用のネットトレーのイラスト。細かいメッシュ状のデザインで、熱と空気が均等に循環しやすい構造になっている。食品の乾燥に適しており、セット内容として5枚付属。下には『ネットトレー（乾燥モード専用）×5枚』と記載されている。"
                             class="accessory__image" />
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/accessory06.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/accessory06.jpg"
                             alt="「スチームトースト用のミニカップのイラストと使用イメージ。黒い円筒状のミニカップが描かれ、トースターの上部にセットする様子が写真で示されている。水を入れて使用することで、スチーム効果によりパンをふっくら焼き上げることができる。下には『スチームトースト用ミニカップ×1個（※2）』と記載されている。"
                             class="accessory__image" />
                         <img
-                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/accessory07.jpg"
+                            src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/accessory07.jpg"
                             alt="取っ手のイラスト。トレーやネットトレーを安全に取り出すためのハンドル形状になっており、熱い状態でも使用しやすいデザイン。下には『取っ手×1個（※3）』と記載されている。"
                             class="accessory__image" />
                     </div>
@@ -550,12 +550,12 @@ get_header('lp_dryfoodairtoaster');
             <p class="cta__action">ご購入はこちらから↓↓</p>
             <div class="cta__inner inner">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/cta.png"
+                    src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/cta.png"
                     alt="キッチンカウンターに置かれたドライフード・エアートースター。庫内にはキウイ、パイナップル、トマト、ズッキーニ、オレンジなどのスライスが並べられ、食品乾燥（DEHYDRATION）モードで使用中。トースト（TOAST）、ドライフード、ハーブティーの乾燥など、さまざまな用途に対応できる機能を示す円形の画像が周囲に配置されている。"
                     class="cta__image fade-in" />
                 <div class="cta__contents">
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/cta-text.png"
+                        src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/cta-text.png"
                         alt="ローフードを豊かにする次世代調理機ドライフード・エアートースター"
                         class="cta__text" />
                     <p class="cta__note">
@@ -564,7 +564,7 @@ get_header('lp_dryfoodairtoaster');
                     </p>
                     <p class="cta__password">PASS：○○○○</p>
                     <div class="cta__btn">
-                        <a href="#" class=""><img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/images/cta-btn.png" alt="今すぐ購入する" /></a>
+                        <a href="#" class=""><img src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-pets_lp/images/cta-btn.png" alt="今すぐ購入する" /></a>
                     </div>
                 </div>
             </div>

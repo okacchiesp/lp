@@ -37,7 +37,7 @@ endif;
 		} ?>>
 
 	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta name="description" content="HOMAREのドライフードエアートースターはからだの中から「キレイ」になれるローフードが作れます！">
+	<meta name="description" content="HOMAREのドライフードエアートースターは子どもの成長に必要な栄養素が摂取できるローフードが作れます！">
 	<meta name="viewport" content="width=device-width">
 	<?php if ($dp_options['use_ogp']) {
 		ogp();
@@ -48,10 +48,10 @@ endif;
 	<link
 		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/css/style.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-children_lp/css/style.css" />
 	<!-- JavaScript -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<script defer src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster_lp/js/script.js"></script>
+	<script defer src="<?php echo get_template_directory_uri(); ?>/dryfoodairtoaster-children_lp/js/script.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -60,7 +60,7 @@ endif;
 	do_action('tcd_before_header', $dp_options);
 
 	// LPページでヘッダー表示しない場合ここでreturn
-	if (is_page_template('page-homare_dryfoodairtoaster.php') && 'show' !== $post->lp_show_header) :
+	if (is_page_template('page-homare_dryfoodairtoaster-children.php') && 'show' !== $post->lp_show_header) :
 		return;
 	endif;
 	?>
@@ -75,8 +75,7 @@ endif;
 						if ($header_desc && null !== $header_desc_mobile) :
 						?>
 							<div class="p-header-description u-hidden-sm"><?php echo esc_html($header_desc); ?></div>
-							<div class="p-header-description u-visible-sm">
-								<?php echo str_replace(array("\r\n", "\r", "\n"), '<br>', esc_html($header_desc_mobile)); ?></div>
+							<div class="p-header-description u-visible-sm"><?php echo str_replace(array("\r\n", "\r", "\n"), '<br>', esc_html($header_desc_mobile)); ?></div>
 						<?php
 						elseif ($header_desc) :
 						?>
@@ -84,8 +83,7 @@ endif;
 						<?php
 						elseif ($header_desc_mobile) :
 						?>
-							<div class="p-header-description u-visible-sm">
-								<?php echo str_replace(array("\r\n", "\r", "\n"), '<br>', esc_html($header_desc_mobile)); ?></div>
+							<div class="p-header-description u-visible-sm"><?php echo str_replace(array("\r\n", "\r", "\n"), '<br>', esc_html($header_desc_mobile)); ?></div>
 						<?php
 						endif;
 
@@ -94,8 +92,7 @@ endif;
 							<div class="p-header__upper-search">
 								<div class="p-header__upper-search__form">
 									<form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-										<input class="p-header__upper-search__input" name="s" type="text"
-											value="<?php echo esc_attr(get_query_var('s')); ?>">
+										<input class="p-header__upper-search__input" name="s" type="text" value="<?php echo esc_attr(get_query_var('s')); ?>">
 										<button class="p-header__upper-search__submit c-icon-button">&#xe915;</button>
 									</form>
 								</div>
@@ -118,9 +115,7 @@ endif;
 						<<?php echo $logotag; ?> class="p-logo p-header__logo<?php if ($dp_options['header_logo_image_retina']) {
 																					echo ' p-header__logo--retina';
 																				} ?>">
-							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_attr($image[0]); ?>"
-									alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
-									<?php if ($dp_options['header_logo_image_retina']) echo ' width="' . floor($image[1] / 2) . '"'; ?>></a>
+							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_attr($image[0]); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" <?php if ($dp_options['header_logo_image_retina']) echo ' width="' . floor($image[1] / 2) . '"'; ?>></a>
 						</<?php echo $logotag; ?>>
 					<?php
 					else :
@@ -133,11 +128,8 @@ endif;
 
 					if ('yes' == $dp_options['use_header_logo_image_mobile'] && $image = wp_get_attachment_image_src($dp_options['header_logo_image_mobile'], 'full')) :
 					?>
-						<div
-							class="p-logo p-header__logo--mobile<?php if ($dp_options['header_logo_image_mobile_retina']) echo ' p-header__logo--retina'; ?>">
-							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_attr($image[0]); ?>"
-									alt="<?php echo esc_attr(get_bloginfo('name')); ?>"
-									<?php if ($dp_options['header_logo_image_mobile_retina']) echo ' width="' . floor($image[1] / 2) . '"'; ?>></a>
+						<div class="p-logo p-header__logo--mobile<?php if ($dp_options['header_logo_image_mobile_retina']) echo ' p-header__logo--retina'; ?>">
+							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_attr($image[0]); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" <?php if ($dp_options['header_logo_image_mobile_retina']) echo ' width="' . floor($image[1] / 2) . '"'; ?>></a>
 						</div>
 					<?php
 					else :
@@ -158,21 +150,16 @@ endif;
 									if (usces_is_membersystem_state()) :
 										if (usces_is_login()) :
 									?>
-											<li class="p-header__membermenu-mypage"><a
-													href="<?php echo esc_attr(USCES_MEMBER_URL); ?>"><?php echo esc_html(get_welcart_member_page_original_title()); ?></a>
-											</li>
+											<li class="p-header__membermenu-mypage"><a href="<?php echo esc_attr(USCES_MEMBER_URL); ?>"><?php echo esc_html(get_welcart_member_page_original_title()); ?></a></li>
 										<?php
 										else :
 										?>
-											<li class="p-header__membermenu-login"><a
-													href="<?php echo esc_attr(USCES_LOGIN_URL); ?>"><?php _e('Login', 'tcd-w'); ?></a></li>
+											<li class="p-header__membermenu-login"><a href="<?php echo esc_attr(USCES_LOGIN_URL); ?>"><?php _e('Login', 'tcd-w'); ?></a></li>
 									<?php
 										endif;
 									endif;
 									?>
-									<li class="p-header__membermenu-wishlist"><a
-											href="<?php echo esc_attr(add_query_arg('page', 'wishlist', USCES_MEMBER_URL)); ?>"><?php echo esc_html($dp_options['product_wishlist_title']); ?></a>
-									</li>
+									<li class="p-header__membermenu-wishlist"><a href="<?php echo esc_attr(add_query_arg('page', 'wishlist', USCES_MEMBER_URL)); ?>"><?php echo esc_html($dp_options['product_wishlist_title']); ?></a></li>
 								</ul>
 							<?php
 							elseif (is_woocommerce_active()) :
@@ -181,21 +168,15 @@ endif;
 									<?php
 									if (is_user_logged_in()) :
 									?>
-										<li class="p-header__membermenu-mypage"><a
-												href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"><?php echo esc_html(get_woocommerce_myaccount_page_title()); ?></a>
-										</li>
+										<li class="p-header__membermenu-mypage"><a href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"><?php echo esc_html(get_woocommerce_myaccount_page_title()); ?></a></li>
 									<?php
 									else :
 									?>
-										<li class="p-header__membermenu-login"><a
-												href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"><?php _e('Login / Registration', 'tcd-w'); ?></a>
-										</li>
+										<li class="p-header__membermenu-login"><a href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"><?php _e('Login / Registration', 'tcd-w'); ?></a></li>
 									<?php
 									endif;
 									?>
-									<li class="p-header__membermenu-wishlist"><a
-											href="<?php echo esc_attr(wc_get_account_endpoint_url('wishlist')); ?>"><?php echo esc_html($dp_options['product_wishlist_title']); ?></a>
-									</li>
+									<li class="p-header__membermenu-wishlist"><a href="<?php echo esc_attr(wc_get_account_endpoint_url('wishlist')); ?>"><?php echo esc_html($dp_options['product_wishlist_title']); ?></a></li>
 								</ul>
 							<?php
 							endif;
@@ -227,8 +208,7 @@ endif;
 										<?php
 										else :
 										?>
-											<li><a href="<?php echo esc_attr(USCES_NEWMEMBER_URL); ?>"><?php _e('Registration', 'tcd-w'); ?></a>
-											</li>
+											<li><a href="<?php echo esc_attr(USCES_NEWMEMBER_URL); ?>"><?php _e('Registration', 'tcd-w'); ?></a></li>
 									<?php
 										endif;
 									endif;
@@ -275,53 +255,39 @@ endif;
 					if (is_welcart_active()) :
 					?>
 						<ul class="p-header__membermenu">
-							<li class="p-header__membermenu-wishlist u-hidden-sm"><a
-									href="<?php echo esc_attr(add_query_arg('page', 'wishlist', USCES_MEMBER_URL)); ?>"><span
-										class="p-header__membermenu-wishlist__count"><?php if ($like_cout = get_like_count()) echo absint($like_cout); ?></span></a>
-							</li>
+							<li class="p-header__membermenu-wishlist u-hidden-sm"><a href="<?php echo esc_attr(add_query_arg('page', 'wishlist', USCES_MEMBER_URL)); ?>"><span class="p-header__membermenu-wishlist__count"><?php if ($like_cout = get_like_count()) echo absint($like_cout); ?></span></a></li>
 							<?php
 							if (usces_is_membersystem_state()) :
 								if (usces_is_login()) :
 							?>
-									<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox"
-											href="<?php echo esc_attr(USCES_MEMBER_URL); ?>"></a></li>
+									<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox" href="<?php echo esc_attr(USCES_MEMBER_URL); ?>"></a></li>
 								<?php
 								else :
 								?>
-									<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox"
-											href="<?php echo esc_attr(USCES_LOGIN_URL); ?>"></a></li>
+									<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox" href="<?php echo esc_attr(USCES_LOGIN_URL); ?>"></a></li>
 							<?php
 								endif;
 							endif;
 							?>
-							<li class="p-header__membermenu-cart"><a class="js-header-cart"
-									href="<?php echo esc_attr(USCES_CART_URL); ?>"><span
-										class="p-header__membermenu-cart__badge"><?php echo $totalquantity; ?></span></a></li>
+							<li class="p-header__membermenu-cart"><a class="js-header-cart" href="<?php echo esc_attr(USCES_CART_URL); ?>"><span class="p-header__membermenu-cart__badge"><?php echo $totalquantity; ?></span></a></li>
 						</ul>
 					<?php
 					elseif (is_woocommerce_active()) :
 					?>
 						<ul class="p-header__membermenu">
-							<li class="p-header__membermenu-wishlist u-hidden-sm"><a
-									href="<?php echo esc_attr(wc_get_account_endpoint_url('wishlist')); ?>"><span
-										class="p-header__membermenu-wishlist__count"><?php if ($like_cout = get_like_count()) echo absint($like_cout); ?></span></a>
-							</li>
+							<li class="p-header__membermenu-wishlist u-hidden-sm"><a href="<?php echo esc_attr(wc_get_account_endpoint_url('wishlist')); ?>"><span class="p-header__membermenu-wishlist__count"><?php if ($like_cout = get_like_count()) echo absint($like_cout); ?></span></a></li>
 							<?php
 							if (is_user_logged_in()) :
 							?>
-								<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox"
-										href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"></a></li>
+								<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox" href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"></a></li>
 							<?php
 							else :
 							?>
-								<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox"
-										href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"></a></li>
+								<li class="p-header__membermenu-mypage u-hidden-sm"><a class="js-header__membermenu-memberbox" href="<?php echo esc_attr(wc_get_account_endpoint_url('dashboard')); ?>"></a></li>
 							<?php
 							endif;
 							?>
-							<li class="p-header__membermenu-cart"><a class="js-header-cart"
-									href="<?php echo esc_attr(wc_get_cart_url()); ?>"><span
-										class="p-header__membermenu-cart__badge"><?php echo $totalquantity; ?></span></a></li>
+							<li class="p-header__membermenu-cart"><a class="js-header-cart" href="<?php echo esc_attr(wc_get_cart_url()); ?>"><span class="p-header__membermenu-cart__badge"><?php echo $totalquantity; ?></span></a></li>
 						</ul>
 					<?php
 					endif;
