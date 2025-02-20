@@ -10,6 +10,10 @@
     width: 100%;
     @include mq(md) {
         margin-top: rem(80);
+        padding: rem(120) 0;
+        background-image: url(../images/recipe-sp-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 .recipe__main {
@@ -66,6 +70,9 @@
     width: rem(20);
     height: rem(4);
     background-color: $accent;
+}
+.recipe__sp-image{
+    margin-top: rem(80);
 }
 .recipe__subtitle {
     font-size: rem(24);

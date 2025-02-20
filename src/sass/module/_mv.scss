@@ -28,10 +28,14 @@
     }
 }
 .mv__btn a {
+    transition: .3s all;
     @include mq(md) {
         display: flex;
         justify-content: center;
     }
+}
+.mv__btn a:hover{
+    opacity: .7;
 }
 .mv__btn img {
     aspect-ratio: 350 / 94;
